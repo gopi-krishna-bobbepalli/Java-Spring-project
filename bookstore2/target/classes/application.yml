@@ -6,10 +6,10 @@ spring:
     name: BOOKSTORE
 
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://spring-db.cn6isigu6rre.ap-south-1.rds.amazonaws.com/spring-db
+    url: jdbc:mysql://spring-db.cn6isigu6rre.ap-south-1.rds.amazonaws.com:3306/spring-db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: admin
     password: 456admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
