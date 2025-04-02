@@ -11,14 +11,14 @@ spring:
     password: 456admin
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    hibernate:
-      ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
-    generate-ddl: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
     show-sql: true
+
  
   
