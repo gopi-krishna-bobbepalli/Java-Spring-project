@@ -10,9 +10,15 @@ spring:
     url: jdbc:mysql://spring-db.cn6isigu6rre.ap-south-1.rds.amazonaws.com/spring-db
     username: admin
     password: 456admin
- 
+
   jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
     generate-ddl: true
-    show-sql: true  
+    show-sql: true
+ 
+  
